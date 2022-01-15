@@ -1,0 +1,26 @@
+.mir-products-content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1030px;
+    margin: auto;
+}
+
+.mir-card {
+    width: 320px;
+    height: 300px;
+    border: solid 1px #d0d0d0;
+    border-radius: 4px;
+    text-align: center;
+    margin: .5rem;
+    padding: .5rem;
+}
+
+.mir-img-product {
+    width: 100px;
+    height: auto;
+}
+
+.mir-bottom {
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-//import './App.css';
+import './ProductCard.css'; 
 
 function ProductCard() {
   const url = 'https://fakestoreapi.com/products';
@@ -13,14 +13,14 @@ function ProductCard() {
     fetchApi()
   }, [])
   return (
-    <div>
+    <div className='mir-products-content'>
       { !products ? 'Cargando...' : 
         products.map((product)=>{
           return (
-            <div>
-              <img src={product.image} className='img-product'/>
-              <p>{product.description}</p>
-              <div> 
+            <div className='mir-card'>
+              <img src={product.image} className='mir-img-product'/>
+              <p>{product.title}</p>
+              <div className='mir-bottom'> 
                 <span>00:32:52</span>
                 <button>Go To detail</button>  
               </div>
