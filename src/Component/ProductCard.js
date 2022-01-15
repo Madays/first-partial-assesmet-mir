@@ -1,23 +1,7 @@
-/*import React from "react";
-
-class ProductCard extends React.Component {    
-  render(){
-    return <div>
-      <img src=""/>
-      <p>Lorem ipson</p>
-      <div> 
-        <span>00:32:52</span>
-        <button>Go To detail</button>  
-      </div>
-    </div>
-  }
-}
-
-export default ProductCard;*/
 import React, {useState, useEffect} from 'react';
 //import './App.css';
 
-function App() {
+function ProductCard() {
   const url = 'https://fakestoreapi.com/products';
   const [products, setProducts] = useState()
   const fetchApi = async () => {
@@ -34,7 +18,7 @@ function App() {
         products.map((product)=>{
           return (
             <div>
-              <img src={product.image}/>
+              <img src={product.image} className='img-product'/>
               <p>{product.description}</p>
               <div> 
                 <span>00:32:52</span>
@@ -49,4 +33,4 @@ function App() {
   );
 }
 
-export default App;
+export default ProductCard;
